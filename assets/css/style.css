@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100vh;
+    background-color:#5a2d2d;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+h2{
+    color: orange;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+form{
+    padding: 50px 0px;
+    background-color:#282829;
+}
+form h2{
+   text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 0px;
+}
+
+.input-fields {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 10px 0px;
+
+}
+
+label{
+    margin: 5px 0px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Input Formulário*/
+
+form input[type=text]{
+    height: 50px;
+    border-radius: 6px;
+    padding:10px;
+    background-color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#808080cc;
+    font-weight: 300;
+}
+
+textarea{
+max-height: 240px;
+border-radius: 6px;
+padding:10px;
+background-color: #F2F2F2;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+
+select{
+      
+    height: 50px;
+    border-radius: 6px;
+    padding: 10px;
+    border: 2px solid #F2F2F2;
+    background-color: #F2F2F2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+select:focus{
+    border: 2px solid #d1d1d1;
+    background-color:#d1d1d1;;
+    color:#020202;
+    font-weight: 600;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+form input[type=submit]{
+    height: 60px;
+    border-radius: 6px;
+    background-color: #08b86e;
+    border:  solid 2px #08b86e;
+    color: #F2F2F2;
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+

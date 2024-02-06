@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#f3f3f3
+}
+
+
+.container{
+   width: 550px;
+   margin: auto;
+   
+}
+
+h2{
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3px; 
+    padding: 10px;
+    
+    
+    
+}
+
+label{
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+    padding: 5px;
+    font-weight: 500;
+}
+
+input[type="email"],
+input[type=password]
+{   
+    
+    height:35px;
+    border-radius: 6px;
+    margin-bottom:20px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+ 
+
+}
+
+/*Personalização input*/
+
+
+input:focus{
+    border: 2px solid  #D93D04;
+    outline: 0;
+}
+
+
+
+
+input[type=submit]{
+    width: 100%;
+    height: 52px;
+    background-color: #D93D04;
+    border: 1px #D93D04;
+    border-radius: 6px;
+    font-family: 'Outfit', sans-serif;
+    color: #FFF;
+    font-weight: 800;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom:20px;
+    
+}  
+
+a {
+    cursor: pointer;
+    color: #D93D04;
+}
+
+.showPassword{
+    display: block;
+}
+
+
+.update-password {
+     text-align: center;
+    margin-top: 10px;
+    
+} 
+
+
+@media(max-width: 460px) {
+    
+    .input-fields{
+        flex-direction: column;
+
+    }
+
+    input{
+        width: 100%;
+        margin: 0;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}

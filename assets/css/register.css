@@ -1,0 +1,89 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#f3f3f3
+}
+
+
+.container{
+   width: 550px;
+   margin: auto;
+   
+}
+
+h2{
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3px; 
+    padding: 10px;
+    
+    
+    
+}
+
+label{
+    font-family: 'Sora', sans-serif;
+    text-align: left;
+    padding: 5px;
+    font-weight: 500;
+}
+
+input[type=text],
+input[type="email"],
+input[type=password]
+{
+    height:35px;
+    border-radius: 6px;
+    margin-bottom:20px;
+
+}
+
+input[type=submit]{
+    width: 100%;
+    height: 52px;
+    background-color: #D93D04;
+    border: 1px #D93D04;
+    border-radius: 6px;
+    font-family: 'Sora', sans-serif;
+    color: #FFF;
+    font-weight: 800;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-bottom:20px;
+}  
+
+.update-password {
+     text-align: center;
+    margin-top: 10px;
+    
+} 
+
+
+@media(max-width: 460px) {
+    
+    .input-fields{
+        flex-direction: column;
+
+    }
+
+    input{
+        width: 100%;
+        margin: 0;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}

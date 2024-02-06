@@ -1,0 +1,12 @@
+
+Tabela usuário:
+  -id
+  -name
+  -email
+  -password
+  -token**
+
+
+token = O usuário fez um login, a gente gera um hash aletório, 
+
+  Modelo de do Banco de dados
