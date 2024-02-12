@@ -10,3 +10,15 @@ Tabela usuário:
 token = O usuário fez um login, a gente gera um hash aletório, 
 
   Modelo de do Banco de dados
+
+  ------------------------------
+  
+  Tabela prospecção:
+   empresa
+   name do decisor.
+   Telefone
+   E-mail 
+   linkedin
+   notes
+  status = multipla escolha.
+  

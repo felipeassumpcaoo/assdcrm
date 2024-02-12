@@ -14,7 +14,7 @@
         <button>
             <span>
                 <i class="bi bi-person-video3"></i>
-             <span>Prospecção</span>
+             <span>Clientes</span>
             </span>
         </button>
 

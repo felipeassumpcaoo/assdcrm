@@ -7,6 +7,10 @@
     <!--CDN ICON BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
    <link rel="stylesheet" href="<?=$base?>assets/css/home.css">
-    <title>Index</title>
+    <title>ASSD</title>
+
+   
+
+
 </head>
 <body>
