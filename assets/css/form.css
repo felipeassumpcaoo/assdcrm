@@ -96,7 +96,7 @@ select{
     font-size: 0.9rem;
 }
 
-input[type=button]{
+input[type="submit"]{
     height: 52px;
     margin-top: 20px;
     background-color: #D93D04;

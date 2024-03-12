@@ -17,6 +17,13 @@
              <span>Clientes</span>
             </span>
         </button>
+        
+        <button>
+            <span>
+                <i class="bi bi-person-video3"></i>
+             <span><a href="pages/prospeccao.php">Prospecção</a></span>
+            </span>
+        </button>
 
         <button>
             <span>
