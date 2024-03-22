@@ -15,9 +15,9 @@ class ProspectionDaoMysql implements ProspectionDAO {
     }
 
     public function findAll(){
-      //$array = [];
+      $array = [];
 
-      //return $array;
+      return $array;
     }
 
     public function findById($id){
