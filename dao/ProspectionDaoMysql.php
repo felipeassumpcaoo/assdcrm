@@ -1,6 +1,6 @@
 <?php
 
-require_once 'models/Prospection.php';
+require_once 'interfaces/ProspectionDAOInterface.php';
 
 class ProspectionDaoMysql implements ProspectionDAO {
     private $pdo; 
