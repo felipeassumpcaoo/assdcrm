@@ -5,18 +5,21 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color:#ebebeb
+    background-color:#EEE;
 }
 
 
 .container{
    width: 50%;
-   height: auto;
+   min-height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
    margin: auto;
-   background-color: #cccccc5d;
-   box-shadow: 1px 1px 6px #0000001c;
-   padding: 50px;
-   border-radius: 5%;
+   background-color:#EEEE;
+   padding: 25px;
+ 
    
 }
 
@@ -25,7 +28,7 @@ h2{
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 
@@ -76,6 +79,8 @@ input[type=text]:focus-visible{
 }
 
 textarea{
+    width: 50vw;
+    height: 30vh;
     outline: #FF4500;
     border: solid 1px #FF4500;
     border-radius: 8px;
@@ -98,7 +103,7 @@ select{
 
 input[type="submit"]{
     height: 52px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: #D93D04;
     border: 1px #D93D04;
     font-family: 'Lato', sans-serif;
@@ -106,6 +111,7 @@ input[type="submit"]{
     font-weight: 800;
     font-size: 1.3rem;
     cursor: pointer;
+    border-radius: 8px;
     box-shadow: 1px 1px 6px #0000001c;
 }  
 

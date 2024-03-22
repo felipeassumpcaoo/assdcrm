@@ -1,6 +1,6 @@
 <?php
 require 'config.php';
-require 'app/Models/Auth.php';
+require 'models/Auth.php';
 
 /**
  * Fazendo a validação dos dados e verificação;

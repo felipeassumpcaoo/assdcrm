@@ -1,6 +1,6 @@
 <?php
 
-require_once 'app/Models/User.php';
+require_once 'models/User.php';
 
 
 /**
