@@ -1,7 +1,7 @@
 <?php
-require_once 'dao/UserDaoMysql.php';
+require_once '../dao/UserDaoMysql.php';
+
 class Auth {
-   
    private $pdo;
    private $base;
    private $dao;
@@ -23,7 +23,8 @@ class Auth {
             $token = $_SESSION['token'];
 
             
-            $user = $this->dao-> findByToken($token);
+            $userDao = new UserDaoMysql($this->pdo);
+            $user = $userDao->findByToken($token);
             if($user) {
                 return $user;
             }
