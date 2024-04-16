@@ -1,6 +1,8 @@
 <?php
- 
  require 'config.php';
+ require_once 'dao/ProspectionDaoMysql.php';
+ 
+ $prospectionDao = new ProspectionDaoMysql($pdo);
 
 $id = filter_input(INPUT_POST, 'id'); 
 $companies = filter_input(INPUT_POST, 'companies');
@@ -12,27 +14,27 @@ $status = filter_input(INPUT_POST, 'status');
 
 
 
-if( $phone != NULL && $notes != NULL) {
-   $companies = ucwords($companies);
-        $name = ucwords($name);
 
-     $sql = $pdo->prepare("UPDATE prospection SET companies = :companies, name = :name,
-     email = :email, phone = :phone, notes = :notes, status = :status WHERE id = :id");
-     $sql->bindValue(':companies', $companies);
-     $sql->bindValue(':name', $name);
-     $sql->bindValue(':email', $email);
-     $sql->bindValue(':phone', $phone);
-     $sql->bindValue(':notes', $notes);
-     $sql->bindValue(':status', $status);
-     $sql->bindValue(':id', $id);
-     $sql->execute();
+if($id !== null && $companies !== null && $name !== null && $email !== null && $status !== null) {
+   
+   $p = new Prospection();
+   $p->setId($id);
+   $p->setCompanies($companies);
+   $p->setName($name);
+   $p->setPhone($phone);
+   $p->setEmail($email);
+   $p->setNotes($notes);
+   $p->setStatus($status);
 
+  
+  
+  
+   $prospectionDao->update($p);
      header("Location: pages/prospeccao.php");
      exit;
 
-
     } else {
-     header("Location: pages/contact_edit.php");
+     header("Location: pages/contact_edit.php?od=".$id);
      exit;
     } 
 

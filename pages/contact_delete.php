@@ -1,13 +1,13 @@
 <?php
  require '../config.php';
+ require '../dao/ProspectionDaoMysql.php';
 
+ $prospectionDao = new ProspectionDaoMysql($pdo);
+ $id = filter_input(INPUT_GET, 'id');
 
-$id = filter_input(INPUT_GET, 'id');
  if($id) {
+   $prospectionDao->delete($id);
  
-    $sql = $pdo->prepare("DELETE FROM prospection WHERE id = :id");
-    $sql->bindValue('id', $id);
-    $sql->execute();   
 } 
 
 header("Location: prospeccao.php");

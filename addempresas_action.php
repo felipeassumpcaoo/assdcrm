@@ -1,6 +1,9 @@
 <?php
  
  require 'config.php';
+ require  'dao/ProspectionDaoMysql.php';
+
+$prospectionDao = new ProspectionDaoMysql($pdo);
 
 $companies = filter_input(INPUT_POST, 'companies');
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -10,31 +13,25 @@ $status = filter_input(INPUT_POST, 'status');
 
 try {
     if ($companies && $name && $email && $status) {
-        $companies = ucwords($companies);
-        $name = ucwords($name);
+        
+        
+      if($prospectionDao->verification($email, $companies) === false) {
+         $newProspection = new Prospection();
+         $newProspection->setCompanies($companies);
+         $newProspection->setName($name);
+         $newProspection->setEmail($email);
+         $newProspection->setStatus($status);
 
-        //Verificando duplicidade
-        $sql = $pdo->prepare("SELECT * FROM prospection WHERE email = :email OR companies = :companies");
-        $sql->bindValue(':email', $email);
-        $sql->bindValue(':companies', $companies);
-        $sql->execute();
+         $prospectionDao->add($newProspection);
 
-        if ($sql->rowCount() === 0) {
-            $sql = $pdo->prepare("INSERT INTO prospection (companies, name, email, status) VALUES (:companies, :name, :email, :status)");
-            $sql->bindValue(':companies', $companies);
-            $sql->bindValue(':name', $name);
-            $sql->bindValue(':email', $email);
-            $sql->bindValue(':status', $status);
-            $sql->execute();
-
-            header("Location: pages/prospeccao.php");
-            exit;
-        } else {
-            echo "Já existe um cadastro com o mesmo e-mail, ou empresa";
-        }
-    } else {
-       
+         header("Location: pages/prospeccao.php");
+         exit;
+     
+       } else {
         header("Location: pages/add_empresas.php");
+         exit;
+       } 
+       
     }
 } catch (Exception $e) {
     

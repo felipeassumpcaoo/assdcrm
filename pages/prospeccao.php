@@ -1,14 +1,9 @@
 <?php
 require '../config.php';
 require  '../dao/ProspectionDaoMysql.php';
-
 $prospectionDao = new ProspectionDaoMysql($pdo);
 $prospectionList = $prospectionDao->findAll();
-
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,6 +36,7 @@ $prospectionList = $prospectionDao->findAll();
     <th>Ações</th>
 </thead>
 <?php foreach($prospectionList as $prospectionLists):?>
+  
   <tbody>
     <tr>
         <td data-th="Empresa"><?=$prospectionLists->getCompanies();?></td>
