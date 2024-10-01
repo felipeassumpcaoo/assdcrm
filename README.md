@@ -1,25 +1,17 @@
-# assdcrm
-assdcrm 1.1
 
+Sistema de Gestão de Prospecção
 
-Sistema de Prospecção de Clientes
-Este repositório abriga um sistema de prospecção de clientes desenvolvido por mim. O objetivo principal deste projeto é facilitar a identificação e abordagem de potenciais clientes, visando aumentar a eficiência das estratégias de marketing e vendas.
+Este projeto é um sistema de gestão de prospecção desenvolvido em PHP 8 com orientação a objetos. Ele permite o cadastro de leads e a gestão desses leads através de um processo estruturado em 7 etapas de vendas, proporcionando uma visão clara e organizada do funil de vendas.
 
-Próxima Fase: Orientação a Objetos
-Após a implementação inicial do sistema de prospecção de clientes, o próximo passo crucial é avançar para uma arquitetura baseada em orientação a objetos. Este paradigma proporcionará uma estrutura mais robusta e modular para o nosso sistema, permitindo uma manutenção mais fácil, reutilização de código e escalabilidade aprimorada.
+Este sistema é especialmente útil para freelancers e profissionais autônomos, como corretores, programadores, gestores de tráfego e designers, que precisam gerenciar suas prospecções de forma prática e eficiente. Com ele, é possível manter um controle detalhado de cada lead, ajudando a organizar o fluxo de trabalho e a maximizar oportunidades de conversão.
 
-Atualização Recente: Estilização da Tabela de Prospecção e Responsividade
+Principais funcionalidades:
 
-A mais recente novidade no assdcrm 1.0 é a estilização completa da tabela de prospecção, tornando-a mais atraente visualmente. Além disso, a tabela agora é responsiva, adaptando-se automaticamente a diferentes tamanhos de tela para uma melhor experiência do usuário. Esta atualização visa melhorar a usabilidade e a estética do sistema, proporcionando uma interface mais intuitiva e amigável.
-
-Atualização para Orientação a Objetos
-
-Nesta atualização do projeto, implementamos o conceito de orientação a objetos para melhorar a estrutura, organização e manutenção do código. Abaixo estão algumas das principais mudanças e melhorias realizadas:
-
-- Refatoração do código para seguir os princípios de encapsulamento, herança e polimorfismo.
-- Introdução de classes e objetos para representar entidades do domínio, como prospecções de clientes.
-- Criação de métodos para manipular os dados das prospecções de forma mais coesa e eficiente.
-- Utilização de DAO (Data Access Object) para separar a lógica de acesso a dados do restante do código.
+Cadastro e atualização de leads;
+Acompanhamento de leads através das 7 etapas do processo de vendas;
+Visão clara do funil de vendas para facilitar a gestão de oportunidades;
+Relatórios para acompanhar o progresso e desempenho das prospecções.
+Desenvolvido com PHP 8 orientado a objetos, o sistema segue boas práticas de programação para garantir escalabilidade e fácil manutenção.
 
 Próximas Atualizações:
 
